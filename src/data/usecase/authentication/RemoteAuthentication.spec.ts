@@ -14,7 +14,6 @@ const makeSut = (url: string = 'any_url'): SutTypes => {
     sut, 
     httpPostClientSpy
   }
-
 }
 
 
