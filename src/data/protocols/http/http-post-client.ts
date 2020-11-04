@@ -2,7 +2,8 @@
 
 
 export type HttpPostParams = {
-  url: string
+  url: string,
+  body?: object
 }
 
 
