@@ -1,6 +1,6 @@
 import { RemoteAuthentication } from './remote-authentication'
 import { HttpPostClientSpy } from '@/data/test/mock-http-client'
-import { mockAuthentication} from '@/domain/tests/mock-authentication';
+import { mockAuthentication, mockAccountModel} from '@/domain/tests/mock-account';
 import {UnexpectedCredentialsError } from '@/domain/models/errors/unexpected-error';
 import { InvalidCredentialsError } from '@/domain/models/errors/invalid-credentials-errors';
 import { HttpStatusCode } from '@/data/protocols/http/http-response';
@@ -76,6 +76,17 @@ describe('RemoteAuthentication', () => {
     }
     const promise = sut.auth(mockAuthentication())
     await expect(promise).rejects.toThrow(new UnexpectedCredentialsError())
+  })
+
+  test('Should return and AccountModel and HTTPPostClient returns 200', async () => { 
+    const { sut, httpPostClientSpy } = makeSut()
+    const httpResult = mockAccountModel()
+    httpPostClientSpy.response = {
+      statusCode: HttpStatusCode.ok,
+      body: httpResult
+    }
+    const account = await sut.auth(mockAuthentication())
+    expect(account).toEqual(httpResult)
   })
 
 
