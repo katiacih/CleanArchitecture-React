@@ -1,6 +1,12 @@
 
 
 
-export const index {
-  
+export function index() {
+
+  return (
+    <div>
+
+    </div>
+  )
+
 }
