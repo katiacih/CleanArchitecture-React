@@ -11,8 +11,8 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"],
-      "@pages": ["/presentation/pages/"],
-      "@components": ["/presentation/pages/components/"]
+      "@pages": ["./presentation/pages/"],
+      "@components": ["./presentation/pages/components/"]
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
