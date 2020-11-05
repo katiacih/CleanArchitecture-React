@@ -48,6 +48,6 @@ module.exports = {
     'react-dom': 'ReactDOM',
   },
   plugins: [
-    new CleanWebpackPlugin
+    
   ]
 }

@@ -1,12 +1,8 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Login from '@/presentation/pages/login/login'
 
-
-
-export function index() {
-
-  return (
-    <div>
-
-    </div>
-  )
-
-}
+ReactDOM.render(
+  <Login/>,
+  document.querySelector('#main')
+)
