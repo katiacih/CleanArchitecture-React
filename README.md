@@ -1,70 +1,215 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# **4Dev React - Enquetes para Programadores**
 
-### `yarn start`
+## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+##Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre Projeto](#Sobre)
+   * [Tabela de Conteudo](#tabela-de-conteudo)
+   * [Princípios](#principios)
+   * [Design Patterns](#design-patterns)
+   * [Meotodologias e Designs](#metodologias-e-designs)
+   * [Bibliotecas e Ferramentas](#bibliotecas-e-ferramentas)
+   * [Instalação](#instalacao)
+   * [Available Scripts](#instalacao)
+   * [Como usar](#como-usar)
+      * [Pre Requisitos](#pre-requisitos)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+   * [Tests](#testes)
+   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ## Princípios
+* Single Responsibility Principle (SRP)
+* Open Closed Principle (OCP)
+* Liskov Substitution Principle (LSP)
+* Interface Segregation Principle (ISP)
+* Dependency Inversion Principle (DIP)
+* Don't Repeat Yourself (DRY)
+* You Aren't Gonna Need It (YAGNI)
+* Keep It Simple, Silly (KISS)
+* Composition Over Inheritance
+* Small Commits
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> ## Design Patterns
+* Factory
+* Adapter
+* Composite
+* Decorator
+* Dependency Injection
+* Abstract Server
+* Composition Root
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> ## Metodologias e Designs
+* TDD
+* Clean Architecture
+* DDD
+* Conventional Commits
+* GitFlow
+* Modular Design
+* Dependency Diagrams
+* Use Cases
+* Continuous Integration
+* Continuous Delivery
+* Continuous Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+> ## Bibliotecas e Ferramentas
+* React
+* Typescript
+* Git
+* Jest
+* Axios
+* Webpack
+* SASS
+* NPM
+* Travis CI
+* Faker
+* Coveralls
+* React Hooks
+* Husky
+* Lint Staged
+* Eslint
+* Standard Javascript Style
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> ## Features do React
+* React Router
+* UseState
+* UseContext
+* Functional Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> ## Features do Git
+* Alias
+* Log Personalizado
+* Branch
+* Reset
+* Amend
+* Tag
+* Stash
+* Rebase
+* Merge
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> ## Features do Typescript
+* POO Avançado
+* Interface
+* Type Alias
+* Utility Types
+* Modularização de Paths
+* Build
+* Deploy
+* Generics
 
-## Learn More
+> ## Features de Testes
+* Testes Unitários
+* Testes de Integração
+* Testes e2e
+* Cobertura de Testes
+* Test Doubles
+* Mocks
+* Stubs
+* Spies
+* Fakes
+* Dummies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Estudo com principais práticas do React   
 
-### Code Splitting
+Este projeto tem como objetivo realizar um apanhado geral das principais metodologias e práticas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Badge](https://img.shields.io/amo/v/1)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!--te-->
 
-### Advanced Configuration
+## Status
+🚧  React Select 🚀 Em construção...  🚧
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Features
+- [x] Estrutura de diretórios
+- [x] Arquivo ReadMe
+- [ ] Conteudo de diretórios
+- [ ] Outros
+- [ ] Outros
+- [ ] Outros
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### Demonstração 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🚧  React Select 🚀 Em construção...  🚧   
+Exemplo de como usar https://github.com/tgmarinho/meetapp
+Screenshots, github, imagens
+
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+
+### Pré-requisitos
+
+Antes de iniciar instale:
+
+- [ReactJs](https://nodejs.org/en/)
+
+NodeJS
+
+Npm 
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando
+
+```bash
+# Clone este repositório
+$ git clone 
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd pasta
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+```
+
+
+## Instalação
+
+
+
+### Outras Dependencias
+
+React-Router-Dom   
+npm install @types/react-router-dom
+More (https://reactrouter.com/web/guides/quick-start)
+
+
+#Autor   
+
+Kátia Cibele 🚀❤️👋🏽 
+Entre em contato!
+![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
+
+
