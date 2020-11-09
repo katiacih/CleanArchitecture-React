@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
 
 
+## [**Link para o curso completo**](https://www.udemy.com/course/)
+
+Essa sistema faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
+
+O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID, DRY, YAGNI, KISS e aplicando Design Patterns para resolver alguns problemas comuns.
+
+
 
 ## Tabela de conteúdos
 =================
@@ -76,6 +83,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Faker
 * Coveralls
 * React Hooks
+* React Router
 * Husky
 * Lint Staged
 * Eslint
@@ -83,6 +91,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > ## Features do React
 * React Router
+* React Testing Library
+* UseHistory
 * UseState
 * UseContext
 * Functional Components
