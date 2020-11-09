@@ -76,6 +76,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Faker
 * Coveralls
 * React Hooks
+* React Router
 * Husky
 * Lint Staged
 * Eslint
@@ -83,6 +84,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > ## Features do React
 * React Router
+* React Testing Library
+* UseHistory
 * UseState
 * UseContext
 * Functional Components
