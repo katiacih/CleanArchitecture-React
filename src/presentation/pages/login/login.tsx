@@ -15,7 +15,7 @@ const Login: React.FC<Props> = ({validation}: Props) => {
     email: '',
     password: '',
     emailError: '',
-    passwordError: 'Campo obrigatório',
+    passwordError: '',
     mainError: ''
   }) 
  
