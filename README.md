@@ -55,6 +55,7 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Dependency Injection
 * Abstract Server
 * Composition Root
+* Builder
 
 > ## Metodologias e Designs
 * TDD
