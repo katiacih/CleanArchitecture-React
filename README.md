@@ -1,6 +1,14 @@
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React)
+
+![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)
+
+
+![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)]  
+
+
 
 
 # **4Dev React - Enquetes para Programadores**
@@ -224,5 +232,6 @@ More (https://reactrouter.com/web/guides/quick-start)
 Kátia Cibele 🚀❤️👋🏽 
 Entre em contato!
 ![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
 
 
