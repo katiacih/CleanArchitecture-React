@@ -1,6 +1,6 @@
 {
   "name": "clean-react-app",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.21.0",
