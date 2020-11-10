@@ -2,6 +2,8 @@ import { EmailValidation } from "./email-validation"
 import { InvalidFieldError } from '@/validation/errors'
 import faker from 'faker'
 
+//SUT, de Subject Under Testing
+
 const makeSut = (): EmailValidation => new EmailValidation(faker.database.column())
 
 describe('EmailValidation', () => {

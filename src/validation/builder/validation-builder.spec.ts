@@ -1,6 +1,8 @@
 import { RequiredFieldValidation, EmailValidation } from '@/validation/validators'
 import { ValidationBuilder as sut } from './validation-builder'
 
+//SUT, de Subject Under Testing
+
 describe('ValidationBuilder', () => {
 
   test('Should return RequiredFieldValidation', () => {
