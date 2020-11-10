@@ -39,6 +39,7 @@ const simulateValidSubmit = async (sut: RenderResult, email = faker.internet.ema
   populateEmailField(sut, email)
   populatePasswordField(sut, password)
   const form = sut.getByTestId('form')
+  //enviar submit atraves da referencia do form
   fireEvent.submit(form)
   await waitFor(() => form)
 }
@@ -65,6 +66,7 @@ const testElementText = (sut: RenderResult, fieldName: string, text: string): vo
 }
 
 const testButtonIsDisabled = (sut: RenderResult, fieldName: string, isDisabled: boolean): void => {
+  //get button by filedname and convert to Button element
   const button = sut.getByTestId(fieldName) as HTMLButtonElement
   expect(button.disabled).toBe(isDisabled)
 }

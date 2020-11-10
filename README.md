@@ -1,3 +1,5 @@
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
@@ -55,6 +57,7 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Dependency Injection
 * Abstract Server
 * Composition Root
+* Builder
 
 > ## Metodologias e Designs
 * TDD
