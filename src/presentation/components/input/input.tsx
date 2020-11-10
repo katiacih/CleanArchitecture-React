@@ -1,4 +1,4 @@
-import React, { useContext} from 'react'
+import React, { useContext } from 'react'
 import Styles from './input-styles.scss'
 import Context from '@/presentation/contexts/form/form-context'
 
@@ -17,15 +17,15 @@ const Input: React.FC<Props> = (props: Props) => {
     })
   }
   const getStatus = (): string => {
-    return error ? '🔴'  : '🟢'
+    return error ? '🔴' : '🟢'
   }
   const getTitle = (): string => {
     return error || 'Tudo certo!'
   }
   return (
     <div className={Styles.inputWrap}>
-      <input  {...props} data-testid={props.name} autoComplete='off' readOnly onFocus={enableInput} onChange={handleChange} />
-    <span data-testid={`${props.name}-status`} title={getTitle()} className={Styles.status}>{getStatus()}</span>
+      <input {...props} data-testid={props.name} autoComplete='off' readOnly onFocus={enableInput} onChange={handleChange} />
+      <span data-testid={`${props.name}-status`} title={getTitle()} className={Styles.status}>{getStatus()}</span>
     </div>
   )
 }

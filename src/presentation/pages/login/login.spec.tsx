@@ -4,42 +4,42 @@ import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
 import faker from 'faker'
 import 'jest-localstorage-mock'
-import Login  from './login'
+import Login from './login'
 import { ValidationStub, AuthenticationSpy } from '@/presentation/test/'
 import { InvalidCredentialsError } from '@/domain/errors'
 
-//factory
+// factory
 type SutTypes = {
   sut: RenderResult
   authenticationSpy: AuthenticationSpy
 }
 
 type SutParams = {
-  validationError:string
+  validationError: string
 }
 
-const history = createMemoryHistory( {initialEntries: ['/login']})
+const history = createMemoryHistory({ initialEntries: ['/login'] })
 
 const makeSut = (params?: SutParams): SutTypes => {
   const validationStub = new ValidationStub()
   const authenticationSpy = new AuthenticationSpy()
   validationStub.errorMessage = params?.validationError
   const sut = render(
-  <Router history={history}> 
-    <Login validation={validationStub} authentication={authenticationSpy} />
-  </Router>
+    <Router history={history}>
+      <Login validation={validationStub} authentication={authenticationSpy} />
+    </Router>
   )
-  return{
+  return {
     sut,
     authenticationSpy
   }
-} 
+}
 
 const simulateValidSubmit = async (sut: RenderResult, email = faker.internet.email(), password = faker.internet.password()): Promise<void> => {
   populateEmailField(sut, email)
   populatePasswordField(sut, password)
   const form = sut.getByTestId('form')
-  //enviar submit atraves da referencia do form
+  // enviar submit atraves da referencia do form
   fireEvent.submit(form)
   await waitFor(() => form)
 }
@@ -66,7 +66,7 @@ const testElementText = (sut: RenderResult, fieldName: string, text: string): vo
 }
 
 const testButtonIsDisabled = (sut: RenderResult, fieldName: string, isDisabled: boolean): void => {
-  //get button by filedname and convert to Button element
+  // get button by filedname and convert to Button element
   const button = sut.getByTestId(fieldName) as HTMLButtonElement
   expect(button.disabled).toBe(isDisabled)
 }
@@ -80,8 +80,6 @@ const testElementExists = (sut: RenderResult, fieldName: string): void => {
   const el = sut.getByTestId(fieldName)
   expect(el).toBeTruthy()
 }
-
-
 
 describe('Login Component', () => {
   afterEach(cleanup)
@@ -113,7 +111,7 @@ describe('Login Component', () => {
     testStatusForField(sut, 'password', validationError)
   })
 
-  test('Should show valid password state if Validation succeeds', () =>{
+  test('Should show valid password state if Validation succeeds', () => {
     const { sut } = makeSut()
     const passwordInput = sut.getByTestId('password')
     fireEvent.input(passwordInput, { target: { value: faker.internet.password() } })
@@ -179,10 +177,9 @@ describe('Login Component', () => {
     expect(localStorage.setItem).toHaveBeenCalledWith('accessToken', authenticationSpy.account.accessToken)
     expect(history.length).toBe(1)
     expect(history.location.pathname).toBe('/')
-
   })
 
-  //test.only -> para rodar soment esse teste
+  // test.only -> para rodar soment esse teste
   test('Should go to signup page', () => {
     const { sut } = makeSut()
     const register = sut.getByTestId('signup')
@@ -190,5 +187,4 @@ describe('Login Component', () => {
     expect(history.length).toBe(2)
     expect(history.location.pathname).toBe('/signup')
   })
-
 })

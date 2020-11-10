@@ -16,6 +16,4 @@ describe('MinLengthValidation', () => {
     const error = sut.validate(faker.random.alphaNumeric(5))
     expect(error).toBeFalsy()
   })
-
-
 })
