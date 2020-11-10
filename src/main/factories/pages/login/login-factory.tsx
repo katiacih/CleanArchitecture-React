@@ -9,8 +9,8 @@ export const makeLogin: React.FC = () => {
 
   return (
     <Login
-    authentication={makeRemoteAuthentication()}
-    validation={makeLoginValidation()}
+      authentication={makeRemoteAuthentication()}
+      validation={makeLoginValidation()}
     />
   )
 }
