@@ -1,6 +1,6 @@
 import { RemoteAuthentication } from './remote-authentication'
 import { HttpPostClientSpy } from '@/data/test'
-import { mockAuthentication, mockAccountModel } from '@/domain/tests'
+import { mockAuthentication, mockAccountModel } from '@/domain/test'
 import { UnexpectedCredentialsError, InvalidCredentialsError } from '@/domain/errors'
 import { HttpStatusCode } from '@/data/protocols/http'
 import { AuthenticationParams } from '@/domain/usecases'
