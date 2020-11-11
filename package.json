@@ -18,6 +18,7 @@
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
+    "test:debug": "npm test",
     "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info",
     "check": "npm-check -u -s",
     "eject": "react-scripts eject"
