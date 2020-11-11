@@ -1,7 +1,6 @@
-
-export class UnexpectedCredentialsError extends Error {
+export class UnexpectedError extends Error {
   constructor () {
-    super('Erro inesperado')
-    this.name = 'InvalidCredentialsError'
+    super('Algo de errado aconteceu. Tente novamente em breve.')
+    this.name = 'UnexpectedError'
   }
 }
