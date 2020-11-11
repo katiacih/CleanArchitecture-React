@@ -1,13 +1,5 @@
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React)
-
-![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)
-
-
-![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)]  
-
+[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React) ![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
 
 
