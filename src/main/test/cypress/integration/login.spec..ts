@@ -7,7 +7,7 @@ describe('Login', () => {
     cy.visit('login')
   })
 
-  it('Shuld load with correct initial state', () => {
+  it('Should load with correct initial state', () => {
     cy.getByTestId('email').should('have.attr', 'readOnly')
     cy.getByTestId('email-status')
       .should('have.attr', 'title', 'Campo obrigatório')
@@ -20,7 +20,7 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
-  it('Shuld present error state if form is invalid', () => {
+  it('Should present error state if form is invalid', () => {
     cy.getByTestId('email').focus().type(faker.random.word())
     cy.getByTestId('email-status')
       .should('have.attr', 'title', 'Valor inválido')
@@ -33,7 +33,7 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
-  it('Shuld present valid state if form is valid', () => {
+  it('Should present valid state if form is valid', () => {
     cy.getByTestId('email').focus().type(faker.internet.email())
     cy.getByTestId('email-status')
       .should('have.attr', 'title', 'Tudo certo!')
@@ -46,7 +46,7 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
-  it('Shuld present error if invalid credentials are provided', () => {
+  it('Should present error if invalid credentials are provided', () => {
     cy.getByTestId('email').focus().type(faker.internet.email())
     cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
     cy.getByTestId('submit').click()
@@ -58,7 +58,7 @@ describe('Login', () => {
     cy.url().should('eq', `${baseUrl}/login`)
   })
 
-  it('Shuld present save accessToken if valid credentials are provided', () => {
+  it('Should present save accessToken if valid credentials are provided', () => {
     cy.getByTestId('email').focus().type('mango@gmail.com')
     cy.getByTestId('password').focus().type('12345')
     cy.getByTestId('submit').click()
