@@ -22,6 +22,14 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
+  // it('Should prevent multiple submits', () => {
+  //   Http.mockOk()
+  //   cy.getByTestId('email').focus().type(faker.internet.email())
+  //   cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
+  //   cy.getByTestId('submit').dblclick()
+  //   FormHelper.testHttpCallsCount(1)
+  // })
+
   it('Should present error state if form is invalid', () => {
     cy.getByTestId('email').focus().type(faker.random.word())
     FormHelper.testInputStatus('email', 'Valor inválido')
@@ -67,14 +75,6 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
     FormHelper.testUrl('/')
     FormHelper.testLocalStorageItem('accessToken')
-  })
-
-  it('Should prevent multiple submits', () => {
-    Http.mockOk()
-    cy.getByTestId('email').focus().type(faker.internet.email())
-    cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
-    cy.getByTestId('submit').dblclick()
-    FormHelper.testHttpCallsCount(1)
   })
 
   it('Should not call submit if form is invalid', () => {

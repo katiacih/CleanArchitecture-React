@@ -60,6 +60,13 @@ describe('SignUp', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
+  // it('Should prevent multiple submits', () => {
+  //   Http.mockOk()
+  //   populateFields()
+  //   cy.getByTestId('submit').dblclick()
+  //   FormHelper.testHttpCallsCount(1)
+  // })
+
   it('Should present EmailInUseError on 403', () => {
     Http.mockEmailInUseError()
     simulateValidSubmit()
@@ -87,13 +94,6 @@ describe('SignUp', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
     FormHelper.testUrl('/')
     FormHelper.testLocalStorageItem('accessToken')
-  })
-
-  it('Should prevent multiple submits', () => {
-    Http.mockOk()
-    populateFields()
-    cy.getByTestId('submit').dblclick()
-    FormHelper.testHttpCallsCount(1)
   })
 
   it('Should not call submit if form is invalid', () => {
