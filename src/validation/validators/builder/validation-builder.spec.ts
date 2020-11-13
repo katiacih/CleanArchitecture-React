@@ -3,8 +3,6 @@ import { ValidationBuilder as sut } from './validation-builder'
 import { CompareFieldsValidation } from '../compare-fields/compare-fields-validation'
 import faker from 'faker'
 
-// SUT, de Subject Under Testing
-
 describe('ValidationBuilder', () => {
   test('Should return RequiredFieldValidation', () => {
     const field = faker.database.column()

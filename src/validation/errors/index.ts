@@ -1,2 +1,2 @@
 export * from './required-field-error'
-export * from './invalid-filed-error'
+export * from './invalid-field-error'

@@ -21,11 +21,10 @@ input[type="text"] {
 
 button {
   background-color: $primary;
-  line-height: 46px;
-  margin-top: 20px;
+  line-height: 50px;
   color: $white;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 16px;
   border: none;
 
   &:hover {

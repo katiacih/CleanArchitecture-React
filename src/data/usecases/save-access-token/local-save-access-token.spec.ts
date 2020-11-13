@@ -1,5 +1,5 @@
 import { LocalSaveAccessToken } from './local-save-access-token'
-import { SetStorageMock } from '@/data/test/mock-cache'
+import { SetStorageMock } from '@/data/test'
 import { UnexpectedError } from '@/domain/errors'
 import faker from 'faker'
 
