@@ -1,7 +1,5 @@
 
-[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React) 
-
-![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React)  [![Coverage Status](https://coveralls.io/repos/github/katiacih/CleanArchitecture-React/badge.svg)](https://coveralls.io/github/katiacih/CleanArchitecture-React) ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
 
 
