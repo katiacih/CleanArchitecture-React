@@ -59,6 +59,7 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Abstract Server
 * Composition Root
 * Builder
+* Proxy
 
 > ## Metodologias e Designs
 * TDD
