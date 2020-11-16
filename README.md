@@ -8,7 +8,7 @@
 ## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
 
 
-## [**Link para o curso completo**](https://www.udemy.com/course/)
+[![alt text](./public/img/course-logo.png "Link para o treinamento")](https://www.udemy.com/course/react-com-mango/?referralCode=552F88858EAE76346C8B)
 
 Essa sistema faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
 
