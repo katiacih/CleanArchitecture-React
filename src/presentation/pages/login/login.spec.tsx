@@ -2,7 +2,7 @@ import { ApiContext } from '@/presentation/contexts'
 import { Login } from '@/presentation/pages'
 import { ValidationStub, Helper } from '@/presentation/test'
 import { InvalidCredentialsError } from '@/domain/errors'
-import { AccountModel } from '@/domain/models'
+import { Authentication } from '@/domain/usecases'
 import { AuthenticationSpy } from '@/domain/test'
 import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
@@ -12,7 +12,7 @@ import faker from 'faker'
 
 type SutTypes = {
   authenticationSpy: AuthenticationSpy
-  setCurrentAccountMock: (account: AccountModel) => void
+  setCurrentAccountMock: (account: Authentication.Model) => void
 }
 
 type SutParams = {
