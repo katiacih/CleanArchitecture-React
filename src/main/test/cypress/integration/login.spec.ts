@@ -1,10 +1,15 @@
-import * as FormHelper from '../support/form-helper'
+import * as FormHelper from '../support/form-helpers'
+import * as Helper from '../support/helpers'
 import * as Http from '../support/login-mocks'
 import faker from 'faker'
 
-const simulateValidSubmit = (): void => {
+const populateFields = (): void => {
   cy.getByTestId('email').focus().type(faker.internet.email())
   cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
+}
+
+const simulateValidSubmit = (): void => {
+  populateFields()
   cy.getByTestId('submit').click()
 }
 
@@ -21,14 +26,6 @@ describe('Login', () => {
     cy.getByTestId('submit').should('have.attr', 'disabled')
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
-
-  // it('Should prevent multiple submits', () => {
-  //   Http.mockOk()
-  //   cy.getByTestId('email').focus().type(faker.internet.email())
-  //   cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5))
-  //   cy.getByTestId('submit').dblclick()
-  //   FormHelper.testHttpCallsCount(1)
-  // })
 
   it('Should present error state if form is invalid', () => {
     cy.getByTestId('email').focus().type(faker.random.word())
@@ -52,34 +49,34 @@ describe('Login', () => {
     Http.mockInvalidCredentialsError()
     simulateValidSubmit()
     FormHelper.testMainError('Credenciais inválidas')
-    FormHelper.testUrl('/login')
+    Helper.testUrl('/login')
   })
 
   it('Should present UnexpectedError on default error cases', () => {
     Http.mockUnexpectedError()
     simulateValidSubmit()
     FormHelper.testMainError('Algo de errado aconteceu. Tente novamente em breve.')
-    FormHelper.testUrl('/login')
-  })
-
-  it('Should present UnexpectedError if invalid data is returned', () => {
-    Http.mockInvalidData()
-    simulateValidSubmit()
-    FormHelper.testMainError('Algo de errado aconteceu. Tente novamente em breve.')
-    FormHelper.testUrl('/login')
+    Helper.testUrl('/login')
   })
 
   it('Should store account on localStorage if valid credentials are provided', () => {
     Http.mockOk()
     simulateValidSubmit()
     cy.getByTestId('error-wrap').should('not.have.descendants')
-    FormHelper.testUrl('/')
-    FormHelper.testLocalStorageItem('account')
+    Helper.testUrl('/')
+    Helper.testLocalStorageItem('account')
+  })
+
+  it('Should prevent multiple submits', () => {
+    Http.mockOk()
+    populateFields()
+    cy.getByTestId('submit').dblclick()
+    Helper.testHttpCallsCount(1)
   })
 
   it('Should not call submit if form is invalid', () => {
     Http.mockOk()
     cy.getByTestId('email').focus().type(faker.internet.email()).type('{enter}')
-    FormHelper.testHttpCallsCount(0)
+    Helper.testHttpCallsCount(0)
   })
 })
