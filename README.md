@@ -96,11 +96,15 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Standard Javascript Style
 
 > ## Features do React
-* React Router
 * React Testing Library
-* UseHistory
+* React Router
 * UseState
 * UseContext
+* UseEffect
+* UseHistory
+* UseRef
+* Custom Hooks
+* Memo
 * Functional Components
 
 
@@ -111,9 +115,16 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Reset
 * Amend
 * Tag
+* Tag Anotada
 * Stash
 * Rebase
 * Merge
+* Add
+* Commit
+* Push
+* Pull
+* Shortlog
+* Status
 
 > ## Features do Typescript
 * POO Avançado
