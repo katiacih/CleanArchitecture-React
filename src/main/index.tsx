@@ -1,9 +1,9 @@
 import Router from '@/main/routes/router'
 import '@/presentation/styles/global.scss'
-import React from 'react'
 import ReactDOM from 'react-dom'
+import React from 'react'
 
 ReactDOM.render(
-  <Router/>,
+  <Router />,
   document.getElementById('main')
 )

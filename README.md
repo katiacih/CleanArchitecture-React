@@ -1,42 +1,25 @@
-
-[![Build Status](https://travis-ci.org/katiacih/CleanArchitecture-React.svg?branch=master)](https://travis-ci.org/katiacih/CleanArchitecture-React)  [![Coverage Status](https://coveralls.io/repos/github/katiacih/CleanArchitecture-React/badge.svg)](https://coveralls.io/github/katiacih/CleanArchitecture-React) ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-
-
+[![Build Status](https://travis-ci.org/rmanguinho/clean-react.svg?branch=master)](https://travis-ci.org/rmanguinho/clean-react)
+[![Coverage Status](https://coveralls.io/repos/github/rmanguinho/clean-react/badge.svg?branch=master)](https://coveralls.io/github/rmanguinho/clean-react?branch=master)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 # **4Dev React - Enquetes para Programadores**
 
-## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
+[![alt text](./public/course-logo.png "Link para o treinamento")](https://www.udemy.com/course/react-com-mango/?referralCode=552F88858EAE76346C8B)
 
+---
 
-[![alt text](./public/img/course-logo.png "Link para o treinamento")](https://www.udemy.com/course/react-com-mango/?referralCode=552F88858EAE76346C8B)
+## [**Link para o curso completo**](https://www.udemy.com/course/react-com-mango/?referralCode=552F88858EAE76346C8B)
 
 Essa sistema faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
 
-O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID, DRY, YAGNI, KISS e aplicando Design Patterns para resolver alguns problemas comuns.
+O objetivo do treinamento é mostrar como criar um sistema em ReactJs utilizando os novos Hooks, com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID, DRY, YAGNI, KISS e aplicando Design Patterns para resolver alguns problemas comuns.
 
-
-
-## Tabela de conteúdos
-=================
-<!--ts-->
-   * [Sobre Projeto](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Princípios](#principios)
-   * [Design Patterns](#design-patterns)
-   * [Meotodologias e Designs](#metodologias-e-designs)
-   * [Bibliotecas e Ferramentas](#bibliotecas-e-ferramentas)
-   * [Instalação](#instalacao)
-   * [Available Scripts](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   
+## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
 
 > ## Princípios
+
 * Single Responsibility Principle (SRP)
 * Open Closed Principle (OCP)
 * Liskov Substitution Principle (LSP)
@@ -49,8 +32,8 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Composition Over Inheritance
 * Small Commits
 
-
 > ## Design Patterns
+
 * Factory
 * Adapter
 * Composite
@@ -62,9 +45,11 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Proxy
 
 > ## Metodologias e Designs
+
 * TDD
 * Clean Architecture
 * DDD
+* Reactive Programming
 * Conventional Commits
 * GitFlow
 * Modular Design
@@ -74,41 +59,41 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Continuous Delivery
 * Continuous Deployment
 
-
 > ## Bibliotecas e Ferramentas
-* React
+
 * Typescript
-* Git
-* Jest
+* React
+* React Testing Library
+* React Router DOM
 * Cypress
+* Jest
 * Axios
+* Git
 * Webpack
-* SASS
+* SASS + Animations
 * NPM
 * Travis CI
 * Faker
 * Coveralls
-* React Hooks
-* React Router
 * Husky
 * Lint Staged
 * Eslint
 * Standard Javascript Style
 
 > ## Features do React
-* React Testing Library
-* React Router
+
+* Functional Components
 * UseState
 * UseContext
 * UseEffect
 * UseHistory
 * UseRef
 * Custom Hooks
+* Router
 * Memo
-* Functional Components
-
 
 > ## Features do Git
+
 * Alias
 * Log Personalizado
 * Branch
@@ -127,9 +112,12 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Status
 
 > ## Features do Typescript
+
 * POO Avançado
 * Interface
 * Type Alias
+* Namespace
+* Module
 * Utility Types
 * Modularização de Paths
 * Build
@@ -137,6 +125,7 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Generics
 
 > ## Features de Testes
+
 * Testes Unitários
 * Testes de Integração
 * Testes e2e
@@ -147,6 +136,7 @@ O objetivo do treinamento é mostrar como criar um sistema em ReactJs com uma ar
 * Spies
 * Fakes
 * Dummies
+
 
 
 # Estudo com principais práticas do React   
@@ -239,5 +229,3 @@ Kátia Cibele 🚀❤️👋🏽
 Entre em contato!
 ![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
-
-

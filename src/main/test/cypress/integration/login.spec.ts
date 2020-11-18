@@ -41,12 +41,6 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
   })
 
-  it('Should prevent multiple submits', () => {
-    mockSuccess()
-    populateFields()
-    cy.getByTestId('submit').dblclick()
-    Helper.testHttpCallsCount(1)
-  })
   it('Should present valid state if form is valid', () => {
     cy.getByTestId('email').focus().type(faker.internet.email())
     FormHelper.testInputStatus('email')
@@ -76,6 +70,13 @@ describe('Login', () => {
     cy.getByTestId('error-wrap').should('not.have.descendants')
     Helper.testUrl('/')
     Helper.testLocalStorageItem('account')
+  })
+
+  it('Should prevent multiple submits', () => {
+    mockSuccess()
+    populateFields()
+    cy.getByTestId('submit').dblclick()
+    Helper.testHttpCallsCount(1)
   })
 
   it('Should not call submit if form is invalid', () => {

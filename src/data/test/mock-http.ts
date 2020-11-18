@@ -6,8 +6,13 @@ export const mockPostRequest = (): HttpPostParams => ({
   body: faker.random.objectElement()
 })
 
+export const mockGetRequest = (): HttpGetParams => ({
+  url: faker.internet.url(),
+  headers: faker.random.objectElement()
+})
+
 export class HttpPostClientSpy<R = any> implements HttpPostClient<R> {
-  url: string
+  url?: string
   body?: any
   response: HttpResponse<R> = {
     statusCode: HttpStatusCode.ok
@@ -33,8 +38,3 @@ export class HttpGetClientSpy<R = any> implements HttpGetClient<R> {
     return this.response
   }
 }
-
-export const mockGetRequest = (): HttpGetParams => ({
-  url: faker.internet.url(),
-  headers: faker.random.objectElement()
-})

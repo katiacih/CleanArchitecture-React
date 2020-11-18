@@ -1,4 +1,3 @@
-
 export const testInputStatus = (field: string, error?: string): void => {
   cy.getByTestId(`${field}-wrap`).should('have.attr', 'data-status', error ? 'invalid' : 'valid')
   const attr = `${error ? '' : 'not.'}have.attr`

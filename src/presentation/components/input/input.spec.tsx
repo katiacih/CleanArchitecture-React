@@ -1,4 +1,4 @@
-import Input from './input'
+import { Input } from '@/presentation/components'
 import { FormContext } from '@/presentation/contexts'
 import { render, RenderResult, fireEvent } from '@testing-library/react'
 import React from 'react'

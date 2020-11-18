@@ -4,4 +4,4 @@ coverage
 public
 dist
 *.scss
-*.json 
+*.json
